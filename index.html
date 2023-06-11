@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheStore</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .material-symbols-rounded {
+        font-variation-settings:
+          'FILL'0,
+          'wght'400,
+          'GRAD'0,
+          'opsz'48
+      }
+
+      label {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      input {
+        border-radius: 7px;
+        border: 2px solid #b2b2b2;
+        height: 20px;
+        flex: 0 0 200px;
+        margin-left: 10px;
+        width: 30%;
+      }
+
+      input[type=text] {
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      input[type=number] {
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      /* Cambia la fuente del input por la del head */
+      input,
+      textarea {
+        font-family: inherit;
+        font-size: inherit;
+      }
+
+      button {
+        /* Quita como se ve en navegadores normalmente */
+        font-family: inherit;
+        font-size: 0.9em;
+        appearance: none;
+        -webkit-appearance: none;
+        /* usual styles */
+        padding: 16px 10px 16px 10px;
+        border: none;
+        background-color: #3F51B5;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 7px;
+        width: 70%;
+        margin-top: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" style="background-color: #f2f2f2; padding: 10px; display: flex; align-items: center;">
+      <div style="margin-right: auto;">
+        <img src="./public/THESTORE_LOGO.jpg" alt="logo" width="15%" style="vertical-align: middle;">
+      </div>
+      <div id="menu" style="background-color: #f2f2f2; padding: 2% 6%;">
+        <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+          <li style="margin-right: 4%; flex-shrink: 0;">
+            <a href="./index.html" style="text-decoration: none; color: #000; font-weight: bold;">Products</a>
+          </li>
+          <li style="margin-right: 4%; flex-shrink: 0;">
+            <a href="#" style="text-decoration: none; color: #000; font-weight: bold;">Card</a>
+          </li>
+          <li style="margin-right: 4%; flex-shrink: 0;">
+            <a href="#" style="text-decoration: none; color: #000; font-weight: bold;">Login</a>
+          </li>
+          <li style="margin-right: 4%; flex-shrink: 0;">
+            <a href="./new_product.html" style="text-decoration: none; color: #000; font-weight: bold;">New Product</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="product" style="width: 90%; margin-left: auto; margin-right: auto; padding: 2%;">
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 2%;">
+        <div style="background-color: #f2f2f2; padding: 2%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); width: 100%;">
+          <img src="./public/Dualshock.JPG" style="width: 100%; height: auto;" alt="Avatar">
+          <div style="text-align: center;">
+            <h4>Control PS4 DualShock</h4>
+            <p>$320.000</p>
+            <button>
+              <span class="material-symbols-rounded">shopping_cart</span> Add to cart </button>
+          </div>
+        </div>
+        <div style="background-color: #f2f2f2; padding: 2%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); width: 100%;">
+          <img src="./public/chromecast.jpg" style="width: 100%; height: auto;" alt="Avatar">
+          <div style="text-align: center;align-items: center;">
+            <h4>Google Chromecast</h4>
+            <p>$138.000</p>
+            <button>
+              <span class="material-symbols-rounded">shopping_cart</span> Add to cart </button>
+          </div>
+        </div>
+        <div style="background-color: #f2f2f2; padding: 2%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); width: 100%;">
+          <img src="./public/Harman.jpg" style="width: 100%; height: auto;" alt="Avatar">
+          <div style="text-align: center;">
+            <h4>Parlante Harman Kardon</h4>
+            <p>$1.195.900</p>
+            <button>
+              <span class="material-symbols-rounded">shopping_cart</span> Add to cart </button>
+          </div>
+        </div>
+        <div style="background-color: #f2f2f2; padding: 2%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); width: 100%;">
+          <img src="./public/IPADAIR.JPG" style="width: 100%; height: auto;" alt="Avatar">
+          <div style="text-align: center;">
+            <h4>iPad Air 10.9" 54GB</h4>
+            <p>$3.679.900</p>
+            <button>
+              <span class="material-symbols-rounded">shopping_cart</span> Add to cart </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

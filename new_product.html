@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheStore</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      label {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      input {
+        border-radius: 7px;
+        border: 2px solid #b2b2b2;
+        height: 20px;
+        flex: 0 0 200px;
+        margin-left: 10px;
+        width: 30%;
+      }
+
+      input[type=text] {
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      input[type=number] {
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+    /* Cambia la fuente del input por la del head */
+      input, textarea {
+        font-family: inherit;
+        font-size: inherit;
+      }
+
+      button {
+    /* Quita como se ve en navegadores normalmente */
+        appearance: none;
+        -webkit-appearance: none;
+        font-family: inherit;
+        font-size: 0.9em;
+        padding: 16px 10px 16px 10px;
+        border: none;
+        background-color: #3F51B5;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 7px;
+        width: 30%;
+        margin-top: 5%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <nav id="navbar" style="background-color: #f2f2f2; padding: 10px; display: flex; align-items: center;">
+        <div style="margin-right: auto;">
+          <img src="./public/THESTORE_LOGO.jpg" alt="logo" width="15%" style="vertical-align: middle;">
+        </div>
+        <div id="menu" style="background-color: #f2f2f2; padding: 2% 6%;">
+          <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+            <li style="margin-right: 4%; flex-shrink: 0;">
+              <a href="./index.html" style="text-decoration: none; color: #000; font-weight: bold;">Products</a>
+            </li>
+            <li style="margin-right: 4%; flex-shrink: 0;">
+              <a href="#" style="text-decoration: none; color: #000; font-weight: bold;">Card</a>
+            </li>
+            <li style="margin-right: 4%; flex-shrink: 0;">
+              <a href="#" style="text-decoration: none; color: #000; font-weight: bold;">Login</a>
+            </li>
+            <li style="margin-right: 4%; flex-shrink: 0;">
+              <a href="./new_product.html" style="text-decoration: none; color: #000; font-weight: bold;">New Product</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div style="margin: 0 auto;width: 60%; text-align: center;margin-top: 5%;">
+      <form>
+        <label>Name:</label>
+        <input type="text" id="nombre" />
+        <label>Price:</label>
+        <input type="number" id="precio" />
+        <label>Inventory:</label>
+        <input type="text" id="inventario" />
+        <br>
+        <button> create product</button>
+      </form>
+    </div>
+  </body>
+</html>
